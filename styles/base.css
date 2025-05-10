@@ -9,7 +9,7 @@ body {
 nav {
     grid-column: 1/3;
     display: flex;
-    background-color: #013468;
+    background-color: #1F2A70;
     width: 100%;
     text-align: center;
 }
@@ -18,7 +18,7 @@ nav a {
     flex: 1 1 100%;
     text-decoration: none;
     color: #E6E6E6;
-    border-bottom: 3px solid #013468;
+    border-bottom: 3px solid #1F2A70;
 }
 nav a:hover {
     border-bottom: 3px solid #E6E6E6;
@@ -66,7 +66,7 @@ img {
     padding: .5em;
     background-color: #9fccfb;
     border-radius: .5em .5em 0 0;
-    border: 1px solid #ddd;
+    border: 1px solid grey;
 }
 
 .card h3 {
