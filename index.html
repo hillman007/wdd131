@@ -6,22 +6,56 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Eric Hillman</title>
     <meta name="author" content="Eric Hillman">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Eric Hillman, WDD 131 home page">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>WDD 131: Dynamic Web Fundamentals - Eric Hillman</h1>
         <nav>
             <a href="https://www.linkedin.com/in/eric-samuel-hillman/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">Canvas</a>"
+            <a href="https://byupw.instructure.com/">Canvas</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng">Scripture</a>
             <a href="#">Final Project</a>
         </nav>
     </header>
     <main>
-
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.webp" alt="A picture of Eric Hillman" width="200">
+            <p>
+                My name is Eric Hillman and I'm a 33 year old Dad with 4 wonderful kids 8 and under. I'm a Computer Tech for a school board here in Alberta Canada. I'm looking forward to learning more about web design as this is all new to me. I like working on cars and I hope to be able to build my own race car one day. I'm also into hunting.
+            </p>
+            <h3>Alberta, Canada</h3>
+            <figure>
+                <img src="images/canada_flag.webp" alt="Official flag of Canada" width="200" class="flag">
+                <figcaption>The flag of Canada</figcaption>
+            </figure>
+            <p>
+                I live in Alberta, Canada. Alberta is known for its stunning natural beauty, including the Rocky Mountains, vast prairies, and beautiful lakes. The province is also home to several national parks, including Banff and Jasper, which attract millions of visitors each year.
+                Alberta is known for its rich cultural heritage, with a diverse population that includes Indigenous peoples, settlers from various countries, and a vibrant arts scene. The province hosts numerous festivals and events celebrating its history and culture.
+            </p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/">W3schools</a> - simple theory and examples</li>
+                <li><a href="https://fonts.google.com/">Google Fonts</a> - fonts, icons</li>
+                <li><a href="https://coolors.co/contrast-checker/">Coolors Contrast Checker</a> - Contrast Checker</li>
+                <li><a href="https://coolors.co/generate">Coolors</a> - super fast color palettes generator</li>
+                <li><a href="https://squoosh.app/">Squoosh</a> - reduce image file size and quality</li>
+            </ul>
+        </section>
     </main>
     <footer>
-
+        <p>
+            &copy;<span id="currentyear"></span> Eric Hillman | Canada
+        </p>
+        <p id="lastmodified">
+        </p>
     </footer>
 </body>
 </html>
