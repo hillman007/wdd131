@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Eric Hillman | Canada</title>
+    <meta name="description" content="WDD 131, a country page for buenos aires argentina by eric hillman">
+    <meta name="author" content="Eric Hillman">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+        <h1>Buenos Aires</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+            <source media="(min-width: 500px )" srcset="images/hero-medium.webp">
+            <img src="images/hero-small.webp" alt="A photo of a market in Buenos Aires, Argentina">
+        </picture>
+        <section class="card data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>205.9 km²</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>3,121,707 (2022)</td>
+                </tr>
+                <tr>
+                    <th>Country:</th>
+                    <td>Argentina</td>
+                </tr>
+                <tr>
+                    <th>Founded:</th>
+                    <td>1880</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>Spanish</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Argentinian Peso</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC -3:00</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+54 9 11</td>
+                </tr>
+            </table>
+        </section>
+        <section class="card temp">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="A drawing of the sun with clouds." width="100">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td><span id="current-temp">9</span>&deg; C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td><span id="windspeed">13</span> km/h</td>
+                </tr>
+                <tr>
+                    <th>Windchill:</th>
+                    <td><span id="windchill"></span></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> Eric Hillman | Canada
+        </p>
+        <p id="lastmodified">
+        </p>
+    </footer>
+</body>
+</html>
