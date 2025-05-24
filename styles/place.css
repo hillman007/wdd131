@@ -1,41 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --general-font: "Roboto", sans-serif;
-    --primary-color: #55acdd; /*picton blue #6cace4*/
-    --secondary-color: #535166; /*english violet #ffb81c*/
-    --tertiary-color: #d6d8e8; /*lavender web #ffffff*/
-    --quaternary-color: #352621; /*liver #7d4016*/
-    --primary-font-color: #eee;
+    --background: #74ACDF; /*Celeste*/
+    --text-background: #FFFFFF; /*White*/
+    --accent: #F6B40E; /*Sun Gold*/
+    --contrast: #003049; /*Navy Blue Deep Contrast Colour*/
     --weather-icon: url(../images/weather-icon.svg)
 }
 
 body {
-    font-family: var(--general-font);
+    font-family: var(--general-font);    
     max-width: 1500px;
     margin: auto;
-    min-height: 1vh;
 }
 
 header {
-    background-color: var(--secondary-color);
-    padding-bottom: 1em;
-    font-family: "Fredericka the Great", 'Times New Roman';
-    color: var(--tertiary-color);
+    background-color: var(--accent);
+    padding-bottom: 0.25em;
+    
 }
 
 h1 {
     text-align: center;
-    background-color: var(--quaternary-color);
+    color: var(--text-background);
+    background-color: var(--background);
     padding: .5em 1em;
     margin: 0;
-    color: var(--tertiary-color);
+    font-family: "Fredericka the Great", 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 img {
     width: 100%;
     margin: 0;
 }
+
+/* not sure how to get rid of white space but using it as a border */
 picture {
-    background-color: var(--primary-color);
+    background-color: var(--accent);
 }
 
 .card {
@@ -64,10 +71,11 @@ td {
 }
 
 footer {
-    background-color: var(--primary-color);
+    color: var(--text-background);
+    background-color: var(--contrast);
     text-align: center;
-    padding: .5em;
-    color: var(--tertiary-color);
+    padding: 0.5em;
+    
 }
 
 @media screen and (min-width: 750px){
@@ -78,15 +86,15 @@ footer {
         position: relative;
         right: .5em;
         text-align: left;
-        color: var(--tertiary-color);
-        background-color: var(--primary-color);
-        padding: .5em 1em .5em 1em;
+        color: var(--contrast);
+        background-color: var(--accent);
+        padding: .5em 1em;
         margin: .5em 0;
     }
 
     .card {
         position: absolute;
-        background-color: rgb(238, 238, 238, 80%);
+        background-color: rgb(238, 238, 238, 0.8);
         padding: 0;
     }
     .card img {
@@ -96,7 +104,6 @@ footer {
     main {
         position: relative;
         width: 100%;
-        background-color: aliceblue;
     }
 
     .temp {
@@ -108,13 +115,19 @@ footer {
     }
 
     .temp h2::after {
-        content: " __";
-        color: rgb(0, 68, 0, 0%);
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
         background-image: var(--weather-icon);
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 40px;
+        height: 40px;
+        margin-left: 0.5em;
     }
 
     .data {
+        position: absolute;
         width: 300px;
         left: 1.5em;
         top: 3em;
