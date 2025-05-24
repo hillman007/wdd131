@@ -27,7 +27,7 @@ header {
 
 h1 {
     text-align: center;
-    color: var(--text-background);
+    color: #000000;
     background-color: var(--background);
     padding: .5em 1em;
     margin: 0;
@@ -115,14 +115,8 @@ footer {
     }
 
     .temp h2::after {
-        content: "";
+        content: "⛅";
         display: inline-block;
-        vertical-align: middle;
-        background-image: var(--weather-icon);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 40px;
-        height: 40px;
         margin-left: 0.5em;
     }
 
