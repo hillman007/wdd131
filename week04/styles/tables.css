@@ -1,0 +1,29 @@
+table{
+    margin: 10px auto;
+    border: thin solid black;
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: small;
+    text-align: center;
+    caption-side: bottom;
+}
+
+th, td{
+    border: thin solid black;
+    padding: 5px;
+}
+
+thead{
+    background-color: black;
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+
+.header{
+    background-color: gray;
+}
