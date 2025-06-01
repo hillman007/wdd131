@@ -110,16 +110,16 @@ const temples = [
 ];
 
 function DisplayTemples(temples) {
-	gallery.innerHTML = ""
+	const gallery = document.querySelector("#gallery");
+    gallery.innerHTML = ""
 	temples.forEach(t => {
-		const gallery = document.querySelector("#gallery");
 		const card = document.createElement("div");
 		const templeHTML = `
 		<h3>${t.templeName}</h3>
 		<p><strong>Location: </strong>${t.location}</p>
 		<p><strong>Dedicated: </strong>${t.dedicated}</p>
 		<p><strong>Size: </strong>${t.area}</p>
-		<img src="${t.imageUrl}" alt="A picture of ${t.templeName} Temple" loading="lazy">
+		<img src="${t.imageUrl}" alt="A picture of ${t.templeName} Temple" width="400" height="250" loading="lazy">
 		`;
 
 	card.innerHTML = templeHTML;
