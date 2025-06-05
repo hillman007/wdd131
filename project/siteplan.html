@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric’s Kitchen Chronicles Site Plan</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #003049; color: white;}
-        section { background-color: #669bbc; padding: 20px; margin: 10px; border-radius: 8px; }
-        header, footer { background-color: #780000; color: white; text-align: center; padding: 10px; }
-    </style>
+    <meta name="description" content="Site plan for Eric’s Kitchen Chronicles, detailing the purpose, scenarios, color schema, typography, and wireframe for the cooking blog.">
+    <meta name="author" content="Eric Hillman">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -35,23 +36,30 @@
     
     <section>
         <h2>Color Schema</h2>
-        <p>Primary color: <strong>#003049</strong> (background-color)</p>
-        <p>Secondary color: <strong>#669bbc</strong> (content sections)</p>
-        <p>accent colot: <strong>#780000</strong> (highlighted areas. featured recipies or call to actions)</p>
+        <p class="primary">Primary color: <strong>#003049</strong> (background-color)</p>
+        <p class="secondary">Secondary color: <strong>#669bbc</strong> (content sections)</p>
+        <p class="accent">accent color: <strong>#780000</strong> (highlighted areas. featured recipies or call to actions)</p>
     </section>
     
     <section>
         <h2>Typography</h2>
         <p>Fonts:</p>
         <ul>
-            <li><strong>Arial</strong> - Used for body text</li>
-            <li><strong>Georgia</strong> - Used for headers</li>
+            <li class="roboto"><strong>Roboto</strong> - Used for body text</li>
+            <li class="fredericka"><strong>Fredericka the Great</strong> - Used for headers</li>
         </ul>
     </section>
     
-    <section>
+    <section class="wireframe">
         <h2>Wireframe</h2>
-        <p>Wireframe sketches will be added later to visualize layout.</p>
+        <figure>
+            <img src="images/mobile_view.drawio.svg" alt="mobile view of the site wireframe"> 
+            <figcaption>Mobile View</figcaption>
+        </figure>
+        <figure>
+            <img src="images/desktop_view.drawio.svg" alt="desktop view of the site wireframe">
+            <figcaption>Desktop View</figcaption>
+        </figure>
     </section>
     
     <footer>
