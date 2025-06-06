@@ -5,9 +5,8 @@
 }
 
 body {
-    font-size: 16px;
     font-family: "roboto", sans-serif;
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -23,7 +22,6 @@ h1 {
 
 main {
     padding: 1rem 2%;
-    min-height: 20rem;
     background-color: var(--secondary-color);
 }
 
@@ -49,17 +47,14 @@ label:not(.star-rating label) {
     display: block;
     padding-top: 1rem;
     color: var(--accent-color);
-    font-size: .9rem;
 }
 
 input[type="text"],
 input[type="date"],
 select
 {
-    background-color: #eee;
     display: block;
     border: 1px solid #999;
-    border-radius: 6px;
     padding: .75rem;
     color: #555;
     width: 100%;
@@ -79,20 +74,17 @@ input[type="submit"] {
     margin: 1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
 }
-input[type="submit"]:hover {
-    text-shadow: 1px 1px 1rem #eee;
-}
 
 input[type="submit"]:active {
     background-image: linear-gradient(var(--primary-color), var(--secondary-color));
 }
 
 input:required, select:required {
-    border-bottom: solid 8px var(--accent-color);
+    border-bottom: solid 6px var(--accent-color);
 }
 
 input:required:valid, select:required:valid {
-    border-bottom: solid 8px green;
+    border-bottom: solid 6px green;
 }
 
 .optional {
@@ -102,7 +94,6 @@ input:required:valid, select:required:valid {
 
 /* ========== STARS STYLING ========== */
 
-/* use reverse flexbox to take advantage of flex-direction: reverse */
 .star-rating {
     display: flex;
     width: 160px;
@@ -113,7 +104,11 @@ input:required:valid, select:required:valid {
 }
 /* hide the inputs */
 .star-rating input {
-display: none;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
 }
 /* set properties of all labels */
 .star-rating > label {
@@ -122,6 +117,7 @@ height: 30px;
 font-size: 30px;
 transition: 0.2s ease;
 color: orange;
+cursor: pointer;
 }
 /* give label a hover state */
 .star-rating label:hover {
