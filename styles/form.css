@@ -39,6 +39,7 @@ fieldset {
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: .5rem 2%;
+    width: 100%;
     max-width: 450px;
     background-color: #fff;
 }
@@ -51,14 +52,15 @@ label:not(.star-rating label) {
 
 input[type="text"],
 input[type="date"],
-select
-{
+select,
+textarea {
+    width: 100%;
+    max-width: 98%;
+    box-sizing: border-box;
     display: block;
     border: 1px solid #999;
     padding: .75rem;
     color: #555;
-    width: 100%;
-    max-width: 400px;
     appearance: none;
 }
 
@@ -96,11 +98,11 @@ input:required:valid, select:required:valid {
 
 .star-rating {
     display: flex;
-    width: 160px;
+    width: 100%;
+    max-width: 160px;
     flex-direction: row-reverse;
-    margin: .5rem auto;
+    margin: .5rem 0;
     position: relative;
-    right: 9rem;
 }
 /* hide the inputs */
 .star-rating input {
