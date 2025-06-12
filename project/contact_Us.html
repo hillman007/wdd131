@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="A product review form page.">
+    <meta name="author" content="Eric Hillman">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Eric’s Kitchen Chronicles</h1>
+        <nav>
+            <a href="index.html" id="all-temples">Home</a>
+            <a href="#" id="breakfast">Breakfast</a>
+            <a href="#" id="dinner">Dinner</a>
+            <a href="#" id="dessert">Dessert</a>
+            <a href="contact_Us.html" id="contactUs">Contact Us</a>
+        </nav>
+        <button id="menu" aria-label="Open navigation menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+        </button>
+    </header>
+    <main>
+        <form action="confirmation.html" method="get">
+            <fieldset>
+                <label for="firstName">First Name
+                    <input type="text" name="firstName" id="firstName" required>
+                </label>
+                <label for="recipeName">Recipe Name
+                    <input type="text" name="recipeName" id="recipeName" required>
+                </label>
+                <label for="mealType">Meal Type</label>
+                <select name="mealType" id="mealType" required>
+                    <option value="" disabled selected>Select a meal type...</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+                <label for="recipeContent">Recipe (URL or write the recipe below)
+                    <textarea name="recipeContent" id="recipeContent" cols="50" rows="5" placeholder="Paste a URL or your recipe here..." required></textarea>
+                </label>
+                <input type="submit" value="Submit Recipe">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> Eric Hillman | Canada
+        </p>
+        <p id="lastmodified">
+        </p>
+    </footer>
+</body>
+</html>

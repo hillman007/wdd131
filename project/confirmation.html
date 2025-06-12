@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Eric Hillman | Product Review Confirmation</title>
+    <meta name="description" content="a success page for product reviews">
+    <meta name="author" content="Eric Hillman">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body onload="tallyReviews()">
+    <header>
+        <h1>Eric’s Kitchen Chronicles</h1>
+        <nav>
+            <a href="index.html" id="all-temples">Home</a>
+            <a href="#" id="breakfast">Breakfast</a>
+            <a href="#" id="dinner">Dinner</a>
+            <a href="#" id="dessert">Dessert</a>
+            <a href="contact_Us.html" id="contactUs">Contact Us</a>
+        </nav>
+        <button id="menu" aria-label="Open navigation menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+        </button>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Success!</h2>
+            <p>Thank you for sharing your recipe with us. We will review it, make it, taste it and then add it to our list if it is delicious</p>
+        </section>
+        <p id="reviews"></p>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> Eric Hillman | Canada
+        </p>
+        <p id="lastmodified">
+        </p>
+    </footer>
+</body>
+</html>
