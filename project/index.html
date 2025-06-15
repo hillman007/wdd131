@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Temple Album</title>
-    <meta name="description" content="A temple album showcasing various temples. Includes options to filter temples by size and age.">
-    <meta name="keywords" content="temples, album, photography">
+    <title>WDD 131 - Eric’s Kitchen Chronicles</title>
+    <meta name="description" content="A recipe album showcasing delicious breakfast, dinner, and dessert recipes. Filter by meal type and discover new favorites.">
+    <meta name="keywords" content="recipes, cooking, breakfast, dinner, dessert, food, Eric's Kitchen Chronicles">
     <meta name="author" content="Eric Hillman">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,21 +18,33 @@
     <header>
         <h1>Eric’s Kitchen Chronicles</h1>
         <nav>
-            <a href="index.html" id="all-temples">Home</a>
+            <a href="index.html" id="all-recipes">Home</a>
             <a href="#" id="breakfast">Breakfast</a>
             <a href="#" id="dinner">Dinner</a>
             <a href="#" id="dessert">Dessert</a>
-            <a href="contact_Us.html" id="contactUs">Contact Us</a>
+            <a href="submit_recipe.html" id="submit-recipe">Submit Recipe</a>
         </nav>
         <button id="menu" aria-label="Open navigation menu" aria-expanded="false">
             <span aria-hidden="true"></span>
         </button>
     </header>
     <main>
-        <h2 id="selection">Home</h2>
+        <h2 id="selection">All Recipes</h2>
         <div id="gallery">
             
         </div>
+        <section id="mailing-list">
+            <form action="#" method="post">
+                <fieldset>
+                    <h4>Join Our Mailing List</h4>
+                    <p>Get the latest recipes and updates straight to your inbox!</p>
+                    <label for="email">Email
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                    <input type="submit" value="Subscribe">
+                </fieldset>
+            </form>
+        </section>
     </main>
     <footer>
         <p>
